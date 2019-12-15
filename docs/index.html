@@ -1,11 +1,11 @@
 <html>
 <head>
-    <title>It's been a long time...</title>
+    <title>Walking in a Winter Terrortown</title>
     <link rel="icon" href="/favicon.ico?v=1.1" type="image/x-icon" />
 
 <style>
     body {
-        background-image: url('./images/ttt_background.png');
+        background-image: url('./images/ttt_background_santa.png');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center top;
@@ -25,7 +25,7 @@
 
 <body>
     <h1 align="center">
-        <span class=countdown>Cagematch will return...</span>
+        <span class=countdown>Ho Ho Ho!<br>Cagematch will return...</span>
         <div id="clockdiv">
             <span class="days"></span> :
             <span class="hours"></span> :
@@ -35,10 +35,11 @@
         <a class="joinlink" href="steam://connect/terrortown.nickcagemat.ch:27015"></a>
     </h1>
 </body>
+<script src="snowstorm-min.js"> </script>
 
 <script>
     //heavily based on https://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/
-    var returndate = 'June 15 2018 20:00:00 GMT-0500';
+    var returndate = 'December 20 2019 20:00:00 GMT-0500';
 
     function getTimeRemaining(endtime){
         var t = Date.parse(endtime) - Date.parse(new Date());
@@ -70,17 +71,17 @@
             minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
             secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
-            if(t.total<=21600000){
+            if(t.total<=-14400000){ //after 4 hours have passed
                 countdown = document.getElementsByClassName("countdown")[0];
                 joinlink = document.getElementsByClassName("joinlink")[0];
-                countdown.innerHTML = "Thanks for playing!";
+                countdown.innerHTML = "Thanks for playing!<br><br>Have a merry Christmas<br>and a happy New Year!";
                 clock.innerHTML = ""
                 joinlink.innerHTML = "";
                 clearInterval(timeinterval);
             } else if(t.total<=0) {
                 countdown = document.getElementsByClassName("countdown")[0];
                 joinlink = document.getElementsByClassName("joinlink")[0];
-                countdown.innerHTML = "Cagematch returns<br>NOW";
+                countdown.innerHTML = "Cagematch will return...<br>NOW";
                 clock.innerHTML = ""
                 joinlink.innerHTML = "Click to join";
                 clearInterval(timeinterval);
