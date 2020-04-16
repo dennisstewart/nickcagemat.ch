@@ -1,11 +1,11 @@
 <html>
 <head>
-    <title>Walking in a Winter Terrortown</title>
+    <title>Quarantine in Terrortown</title>
     <link rel="icon" href="/favicon.ico?v=1.1" type="image/x-icon" />
 
 <style>
     body {
-        background-image: url('./images/ttt_background_santa.png');
+        background-image: url('./images/ttt_background.png');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center top;
@@ -25,7 +25,7 @@
 
 <body>
     <h1 align="center">
-        <span class=countdown>Ho Ho Ho!<br>Cagematch will return...</span>
+        <span class=countdown>I know you're not busy.<br>Cagematch will return...</span>
         <div id="clockdiv">
             <span class="days"></span> :
             <span class="hours"></span> :
@@ -35,11 +35,10 @@
         <a class="joinlink" href="steam://connect/terrortown.nickcagemat.ch:27015"></a>
     </h1>
 </body>
-<script src="snowstorm-min.js"> </script>
 
 <script>
     //heavily based on https://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/
-    var returndate = 'December 27 2019 20:00:00 GMT-0500';
+    var returndate = 'April 18 2020 20:00:00 GMT-0400';
 
     function getTimeRemaining(endtime){
         var t = Date.parse(endtime) - Date.parse(new Date());
