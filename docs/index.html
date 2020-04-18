@@ -11,15 +11,23 @@
         background-position: center top;
         background-attachment: fixed;
         background-color: #000000;
-    }
-    h1 {
+
         color: #fff;
         font-family: "Arial Black", "Arial Bold";
+    }
+    h1 {
         position: absolute;
         top: 30%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
     } 
+    h2 {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
 </style>
 </head>
 
@@ -34,6 +42,9 @@
         </div>
         <a class="joinlink" href="steam://connect/terrortown.nickcagemat.ch:27015"></a>
     </h1>
+    <h2 align="center">
+        Follow the instructions <a href="./howto.html">here</a> to get set up.
+    </h2>
 </body>
 
 <script>
@@ -82,7 +93,7 @@
                 joinlink = document.getElementsByClassName("joinlink")[0];
                 countdown.innerHTML = "Cagematch will return...<br>NOW";
                 clock.innerHTML = ""
-                joinlink.innerHTML = "Click to join";
+                joinlink.innerHTML = "Click to join; the password is 'hand'";
                 clearInterval(timeinterval);
             }
         }
