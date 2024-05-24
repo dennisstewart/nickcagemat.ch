@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Quarantine in Terrortown</title>
+    <title>We're so back</title>
     <link rel="icon" href="/favicon.ico?v=1.1" type="image/x-icon" />
 
 <style>
@@ -33,7 +33,7 @@
 
 <body>
     <h1 align="center">
-        <span class=countdown>I know you're not busy.<br>Cagematch will return...</span>
+        <span class=countdown>I've been really busy being dead. You know, after you MURDERED ME.<br><br>Cagematch will return...</span>
         <div id="clockdiv">
             <span class="days"></span> :
             <span class="hours"></span> :
@@ -43,13 +43,13 @@
         <a class="joinlink" href="steam://connect/terrortown.nickcagemat.ch:27015"></a>
     </h1>
     <h2 align="center">
-        Follow the instructions <a href="./howto.html">here</a> to get set up.
+        Follow the instructions <a href="./setup.html">here</a> to get set up.
     </h2>
 </body>
 
 <script>
     //heavily based on https://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/
-    var returndate = 'April 18 2020 20:00:00 GMT-0400';
+    var returndate = 'May 24 2024 20:00:00 GMT-0400';
 
     function getTimeRemaining(endtime){
         var t = Date.parse(endtime) - Date.parse(new Date());
@@ -84,7 +84,7 @@
             if(t.total<=-14400000){ //after 4 hours have passed
                 countdown = document.getElementsByClassName("countdown")[0];
                 joinlink = document.getElementsByClassName("joinlink")[0];
-                countdown.innerHTML = "Thanks for playing!<br><br>Have a merry Christmas<br>and a happy New Year!";
+                countdown.innerHTML = "Thanks for playing!<br><br>See you next time!";
                 clock.innerHTML = ""
                 joinlink.innerHTML = "";
                 clearInterval(timeinterval);
